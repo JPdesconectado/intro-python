@@ -62,6 +62,32 @@ if 0 < temperature < 100:
 
 # 1) Crie uma funcao que receba duas listas e verifique se elas são iguais. Cada elemento e sua ordem devem ser o mesmo. Retorne True ou False.
 #
+lista1 = [1,2,3,4]
+lista2 = [1,2,3,4]
+    
+    
+def v(l1, l2):
+    if(l1 == l2):
+        return True
+    else:
+        return False
+    
+print(v(lista1,lista2))
+ 
+    
 # 2) Crie uma funcao que verifica se duas strings são palindromes perfeitas. Faca as 'limpeza'/sanitizacao necessarias.  Retorne True ou False.
 #
+string ='Ovo'
+
+def pal(string):
+    string = string.lower().replace(' ','')
+    if(string == string[::-1]):
+        return True
+    else:
+        return False
+    
+    
+print(pal(string))
+
 # OBS.: Utilize apenas o que foi estudado ate agora
+    

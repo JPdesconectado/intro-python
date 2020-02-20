@@ -48,21 +48,39 @@ print(type(list))
 #########
 
 # Como selecionar 'wed' pelo indice?
+print(days_list.index('wed'))
 
 # Como verificar o tipo de 'mon'?
+print(type(days_list[days_list.index('mon')]))
 
 # Como separar 'wed' até 'fri'?
+a = days_list.index('wed')
+b = days_list.index('fri')+1
+print(days_list[a:b])
 
 # Quais as maneiras de selecionar 'fri' por indice?
+print(days_list.index('fri'))
 
 # Qual eh o tamanho dos dias e days_list?
+print(len(days_list))
 
 # Como inverter a ordem dos dias?
+days_list = days_list[::-1]
+print(days_list)
 
 # Como inserir a palavra 'zero' entre 'a' e 1 de list?
-
-# Como limpar list?
-
-# Como deletar list?
+list.insert(1, 'zero')
+print(list)
 
 # Como atribuir o ultimo elemento de list na variavel ultimo_elemento e remove-lo de list?
+ultimo_elemento = list[-1]
+list.remove(ultimo_elemento)
+print(list)
+print('Ultimo elemento que fora removido: ', ultimo_elemento)
+
+# Como limpar list?
+list.clear()
+print(list)
+
+# Como deletar list?
+del(list)
